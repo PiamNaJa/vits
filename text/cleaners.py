@@ -77,6 +77,7 @@ def cjke_cleaners2(text):
 def thai_cleaners(text):
     text = num_to_thai(text)
     text = latin_to_thai(text)
+    text = re.sub(r'[^a-zA-Z]',lambda x: english_to_lazy_ipa(x.group(1))+' ', text)
     return text
 
 
