@@ -31,8 +31,8 @@ path/to/XXX.wav|speaker id|transcript
 ```
 dataset/001.wav|0|こんにちは。
 ```
-From [https://github.com/ouor/vits](https://github.com/ouor/vits)
 ## Preprocess
+From [https://github.com/ouor/vits](https://github.com/ouor/vits)
 If you need random pick from full filelist..
 ```sh
 python random_pick.py --filelist path/to/filelist.txt
@@ -46,8 +46,8 @@ python preprocess.py --text_index 2 --filelists path/to/filelist_train.txt path/
 ```
 If you have done this, set "cleaned_text" to true in config.json
 
-From [https://github.com/ouor/vits](https://github.com/ouor/vits)
 ## Small Tips
+From [https://github.com/ouor/vits](https://github.com/ouor/vits)
 - recommand to use pretrained model (you can get pretrained model from huggingface.co)
 - If your vram is not enough (less than 40GB)
 - do not train with 44100Hz. 22050Hz is good enough.
