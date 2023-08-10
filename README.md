@@ -9,6 +9,10 @@ git clone https://github.com/CjangCjengh/vits.git
 - Edit text/symbols.py
 - Remove unnecessary imports from text/cleaners.py
 ## Install requirements
+[pyopenjtalk/issues/48](https://github.com/r9y9/pyopenjtalk/issues/48)
+```sh
+pip install pyopenjtalk --no-build-isolation
+```
 ```sh
 pip install -r requirements.txt
 ```
