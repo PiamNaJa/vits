@@ -77,7 +77,6 @@ def cjke_cleaners2(text):
 def thai_cleaners(text):
     text = num_to_thai(text)
     text = latin_to_thai(text)
-    text = re.sub(r'[^a-zA-Z]',lambda x: english_to_lazy_ipa(x.group(1))+' ', text)
     return text
 
 
@@ -86,8 +85,6 @@ def chinese_dialect_cleaners(text):
                   lambda x: japanese_to_ipa3(x.group(1)).replace('Q', 'ʔ')+' ', text)
     text = re.sub(r'\[EN\](.*?)\[EN\]',
                   lambda x: english_to_lazy_ipa2(x.group(1))+' ', text)
-    text = re.sub(r'\[([A-Z]{2})\](.*?)\[\1\]', lambda x: ngu_dialect_to_ipa(x.group(2), x.group(
-        1)).replace('ʣ', 'dz').replace('ʥ', 'dʑ').replace('ʦ', 'ts').replace('ʨ', 'tɕ')+' ', text)
     text = re.sub(r'\s+$', '', text)
     text = re.sub(r'([^\.,!\?\-…~])$', r'\1.', text)
     return text
