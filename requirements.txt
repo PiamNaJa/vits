@@ -73,8 +73,8 @@ six==1.16.0
 soundfile==0.12.1
 threadpoolctl==3.1.0
 toml==0.10.2
-torch==1.6.0+cu101
-torchvision==0.7.0+cu101
+# torch==1.6.0+cu101
+# torchvision==0.7.0+cu101
 tornado==6.2
 tqdm==4.66.0
 traitlets==5.9.0

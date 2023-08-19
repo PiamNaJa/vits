@@ -15,3 +15,4 @@ configs/tolove_japanese_base2.json
 saved_model
 .env
 datasets
+infer
