@@ -60,6 +60,7 @@ From [https://github.com/ouor/vits](https://github.com/ouor/vits)
 ## Build monotonic alignment search
 ```sh
 cd monotonic_align
+mkdir monotonic_align
 python setup.py build_ext --inplace
 cd ..
 ```
